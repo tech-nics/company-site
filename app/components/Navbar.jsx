@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 
 const Navbar = () => {
@@ -31,6 +32,13 @@ const Navbar = () => {
   <button  className="hover:bg-[#03a4ed] transition-colors duration-700 md:text-[14px]  block max-[500px]:px-2 max-[500px]:py-1 max-[380px]:hidden px-5 py-2 rounded-[23px] bg-[#fe3f40] text-[#fff] font-[600] max-[400px]:tracking-normal tracking-[2px]">Contact Us</button>                   
   </div>
 </div>
+=======
+import React from 'react'
+
+const Navbar = () => {
+  return (
+    <div>Navbar</div>
+>>>>>>> 9dd497c391acd36953f791d25043db4cf2d8dcdb
   )
 }
 

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 
 const Hero = () => {
@@ -19,6 +20,13 @@ const Hero = () => {
                 </div>
             </div>
         </>
+=======
+import React from 'react'
+
+const Hero = () => {
+  return (
+    <div>Hero</div>
+>>>>>>> 9dd497c391acd36953f791d25043db4cf2d8dcdb
   )
 }
 
