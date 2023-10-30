@@ -1,9 +1,20 @@
 import Image from 'next/image'
+import Hero from './components/Hero'
+import About from './components/About'
+import Service from './components/Service'
+import Portfolio from './components/Portfolio'
+import Blogs from './components/Blogs'
+import ContactUs from './components/ContactUs'
 
 export default function Home() {
   return (
-    <h1 className=' text-3xl font-bold p-5 animate-bounce h-screen flex items-center justify-center'>
-        Tech nics ++
-    </h1>
+    <main>
+        <Hero/>
+        <About/>
+        <Service/>
+        <Portfolio/>
+        <Blogs/>
+        <ContactUs/>
+    </main>
   )
 }
