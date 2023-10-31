@@ -1,8 +1,21 @@
-import React from 'react'
+"use client"
+import React, { useEffect } from 'react'
 import { services } from '../data/service'
 import Image from 'next/image'
+// import AOS from 'aos';
+// import 'aos/dist/aos.css'; 
+
 
 const Service = () => {
+
+    // useEffect( () => {
+    //     AOS.init({
+    //         duration: 1000,
+    //         once: false,
+    //         // delay:500
+    //     })
+    // })
+
   return (
     <div id='services-offered' className=' bg-white text-black py-20'>
 
@@ -17,7 +30,9 @@ const Service = () => {
         <div className=' grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-8 gap-y-12 md:gap-y-16  w-10/12 mx-auto'>
             {
                 services.map( (service, index )=> (
-                    <div 
+                    <div
+                    data-aos="fade-right"
+                    data-aos-delay={`${index*300}`}
                     className=' relative h-[15rem] group lg:cursor-pointer md:cursor-pointer rounded-3xl shadow-[0_8px_30px_rgb(0,0,0,0.12)]'
                     key={index}>
                         {/* Title and description */}
