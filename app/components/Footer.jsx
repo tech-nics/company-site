@@ -52,7 +52,7 @@ const Footer = () => {
         {/* Copyright issue and social media handles */}
         <div className=' flex flex-col-reverse lg:flex-row md:flex-row gap-y-4 justify-between'>
             <div>
-                <p>Copy right issue</p>
+                <p>Copy  right issues</p>
             </div>
 
             <div className=' flex  gap-2'>
