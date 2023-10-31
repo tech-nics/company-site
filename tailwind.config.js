@@ -7,7 +7,6 @@ module.exports = {
   ],
   theme: {
     extend: {
-<<<<<<< HEAD
       height:{
         'heroh':'calc(100vh - 4rem)'
       },
@@ -15,6 +14,7 @@ module.exports = {
         'moveLeft': 'moveLeft 3.2s ease-in-out forwards',
         'moveRight': 'moveRight 2s ease-in-out forwards',
         'moveDown': 'moveDown 0.8s forwards',
+        'moveUp': 'moveUp 0.8s forwards',
       },
       keyframes: {
         moveRight:{
@@ -29,9 +29,11 @@ module.exports = {
           '0%': { transform: 'translateY(-80px)' },
           '100%': { transform: 'translateY(0px)' },
         },
+        moveUp:{
+          '0%': { transform: 'translateY(8000px)' },
+          '100%': { transform: 'translateY(0px)' },
+        },
       },
-=======
->>>>>>> 9dd497c391acd36953f791d25043db4cf2d8dcdb
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
@@ -42,8 +44,7 @@ module.exports = {
   plugins: [
     require("daisyui")
   ],
-<<<<<<< HEAD
-  
-=======
->>>>>>> 9dd497c391acd36953f791d25043db4cf2d8dcdb
+  daisyui: {
+    themes: ["light","dark"],
+  },
 }

@@ -6,16 +6,25 @@ import TeamSlider from './TeamSlider'
 
 const About = () => {
   return (
-    <div className=' lg:bg-about-background bg-no-repeat  bg-white min-h-[90vh] h-auto py-10 min-w-[100%]'>
+    <div id='about-us' className=' lg:bg-about-background bg-cover bg-no-repeat  bg-white min-h-[90vh] h-auto py-10 min-w-[100%]'>
 
         <div className='lg:w-10/12 md:w-10/12 w-full  mx-auto'>
             {/* Company Description */}
             <div className=' text-black flex  flex-col items-center gap-5 mb-5'>
 
-            <h2 className=' text-[3rem] font-extrabold  text-orange-400'>Tech<span className=' text-blue-500'>nics</span></h2>
-            <p className=' font-bold lg:text-white p-2 '>
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed nunc pretium, pellentesque metus non, finibus metus. Quisque tincidunt dolor at ligula ultrices tristique. Maecenas scelerisque lectus sit amet arcu scelerisque condimentum. Cras sit amet dolor lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum convallis ante sed pulvinar gravida. Duis orci nisl, rutrum vel velit eu, porta malesuada tellus."
-            </p>
+            <h2 className=' text-[3rem] mt-5 font-extrabold  text-orange-400'>Tech<span className=' text-blue-500'>nics</span></h2>
+            <p className={`font-bold lg:text-white  p-4`}>
+                  We at Techplusnic are dedicated to empowering businesses in the
+                  digital age. We specialize in &nbsp;
+                  <em className="font-[600]">
+                     SEO,website building and online business setup
+                  </em>
+                  . &nbsp; Our mission is to help businesses establish a strong online
+                  presence, optimize their search engine rankings, and successfully
+                  transition their operations online. We believe in the power of the
+                  internet to transform businesses and are committed to making this
+                  transformation as seamless as possible for our clients.
+                </p>
 
             </div>
 
@@ -32,7 +41,7 @@ const About = () => {
 
             {/* Team image slider */}
             <div className=' flex flex-col items-center'>
-                <h3 className=' text-center mb-5 text-[2rem] font-extrabold lg:text-white p-4'> Meet Your team</h3>
+                <h3 className=' text-center mb-5 text-[2rem] font-extrabold lg:text-white p-4'> Meet Our team</h3>
                 <TeamSlider/>
             </div>
             </div>

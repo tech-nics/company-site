@@ -3,7 +3,8 @@ import React from 'react'
 
 const TeamSliderCard = ({member}) => {
   return (
-    <div className=' w-full h-full p-4 text-white flex flex-col gap-5'>
+    <div className='card p-4 gap-5'>
+        {/* w-full h-full p-4 text-white flex flex-col */}
         {/* Image and description */}
         <div className=' flex gap-4 border-b-2 pb-5'>
             {/* Profile image */}
