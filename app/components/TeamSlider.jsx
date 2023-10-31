@@ -52,7 +52,7 @@ const TeamSlider = () => {
       <div ref={sliderRef} className="keen-slider w-full h-full">
         {
             teamProfile.map( (member, index) => (
-                <div className="keen-slider__slide bg-gradient-to-b from-orange-400 to-red-500 w-full h-full">
+                <div key={member.name} className="keen-slider__slide bg-gradient-to-b from-orange-400 to-red-500 w-full h-full">
                     <TeamSliderCard member={member} />
                 </div>
             ))
