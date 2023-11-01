@@ -14,16 +14,19 @@ const transporter = nodemailer.createTransport({
 
 export async function sendEmail(data){
     
-    const mail = await transporter.sendMail({
-        from: data.email,
-        to: "techplusnics@gmail.com",
-        subject: `Website activity from ${data.name}`,
-        html: `
-        <p>Name: ${data.name} </p>
-        <p>Email: ${data.email} </p>
-        <p>Message: ${data.msg} </p>
-        `,
-    })
-
-    console.log(mail)
+    try {
+        const mail = await transporter.sendMail({
+            from: data.email,
+            to: "techplusnics@gmail.com",
+            subject: `Website activity from ${data.name}`,
+            html: `
+            <p>Name: ${data.name} </p>
+            <p>Email: ${data.email} </p>
+            <p>Message: ${data.msg} </p>
+            `,
+        })
+        return true
+    } catch (error) {
+        return false
+    }
 }

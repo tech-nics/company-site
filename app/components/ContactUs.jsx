@@ -1,4 +1,5 @@
 import Form from "./Form";
+import Image from "next/image";
 
 const ContactUs = () => {
   return (
@@ -12,11 +13,11 @@ const ContactUs = () => {
             <div className="py-6 text-2xl flex flex-col items-center gap-4 md:flex-row lg:justify-start md:justify-center  md:items-center md:gap-[20px] font-[600] text-white">
               <span>For any enquiry, Call Us:</span>
               <div>
-                <img
+                <Image
                   className="inline-block"
                   width="40"
                   height="40"
-                  src="https://img.icons8.com/flat-round/64/000000/phone.png"
+                  src="/phone.png"
                   alt="phone"
                 />{" "}
                 &nbsp;<span className="inline-block">7586969746</span>

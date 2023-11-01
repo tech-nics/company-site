@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const Navbar = () => {
   return (
     <div className="navbar fixed z-10 animate-moveDown bg-slate-100  md:px-5">
@@ -10,7 +12,7 @@ const Navbar = () => {
             <li><a href="#" className="font-[600]">Home</a></li>
             <li><a href="#about-us" className="font-[600]">About Us</a></li>
             <li><a href="#services-offered" className="font-[600]">Services</a></li>
-            <li><a href="/blog" className="font-[600]">Blog</a></li>
+            <li><Link href="/blog" className="font-[600]">Blog</Link></li>
           </ul>
         </div>
         <a className="font-[700] uppercase text-[#03a4ed] max-[500px]:text-[20px]  md:text-[16px] lg:text-[32px] tracking-[4px]">Techplus<span className="text-[#dc3545] font-[700] uppercase md:text-[16px] lg:text-[32px]">nics</span></a>
@@ -20,7 +22,7 @@ const Navbar = () => {
           <li><a href="#" className="font-[600] md:text-[14px] lg:text-[20px]">Home</a></li>
           <li><a href="#about-us" className="font-[600] md:text-[14px] lg:text-[20px]">About Us</a></li>
           <li><a href="#services-offered" className="font-[600] md:text-[14px] lg:text-[20px]">Services</a></li>
-          <li><a href="/blog" className="font-[600] md:text-[14px] lg:text-[20px]">Blog</a></li>
+          <li><Link href="/blog" className="font-[600] md:text-[14px] lg:text-[20px]">Blog</Link></li>
         </ul>
       </div>
       <div className="navbar-end">

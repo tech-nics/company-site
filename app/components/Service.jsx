@@ -1,10 +1,23 @@
-import React from 'react'
+"use client"
+import React, { useEffect } from 'react'
 import { services } from '../data/service'
 import Image from 'next/image'
+// import AOS from 'aos';
+// import 'aos/dist/aos.css'; 
+
 
 const Service = () => {
+
+    // useEffect( () => {
+    //     AOS.init({
+    //         duration: 1000,
+    //         once: false,
+    //         // delay:500
+    //     })
+    // })
+
   return (
-    <div id='services-offered' className=' bg-white text-black py-20'>
+    <div data-aos="fade-up" data-aos-duration="2000" data-aos-delay="800" id='services-offered' className=' bg-white text-black py-20'>
 
         <h1 className=' text-center mb-28 text-[2rem] font-extrabold  w-10/12 mx-auto'>
             See What Our Agency 
@@ -17,7 +30,9 @@ const Service = () => {
         <div className=' grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-8 gap-y-12 md:gap-y-16  w-10/12 mx-auto'>
             {
                 services.map( (service, index )=> (
-                    <div 
+                    <div
+                    data-aos="fade-right"
+                    data-aos-delay={`${index*300}`}
                     className=' relative h-[15rem] group lg:cursor-pointer md:cursor-pointer rounded-3xl shadow-[0_8px_30px_rgb(0,0,0,0.12)]'
                     key={index}>
                         {/* Title and description */}
@@ -34,6 +49,7 @@ const Service = () => {
                         <div className=' group-hover:translate-y-14 transition-all duration-300 bg-white absolute hidden lg:flex md:flex items-center justify-center
                         w-full h-full rounded-3xl '>
                             <Image
+                            alt='svc-img'
                             className='w-30 h-30 '
                             src={service.image}
                             width={100}

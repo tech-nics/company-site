@@ -1,5 +1,6 @@
 import { useForm } from "react-hook-form"
 import { sendEmail } from "./_actions"
+import { toast } from "sonner"
 
 export default function Form(){
     const {
@@ -9,11 +10,25 @@ export default function Form(){
         formState: { errors },
       } = useForm()
 
-    const onSubmit = (data) => sendEmail(data)
+    const onSubmit = async (data) => {
+      const isdataSent = await sendEmail(data)
+      if(isdataSent){
+        toast.success("Sent successfuly",{
+          description: "You will get a call from our side within 1hr",
+        })
+        return
+      }
+
+      toast.error("Something unexpected occured",{
+        description:"Please try again"
+      })
+      
+    }
 
     return(
         <div data-aos="fade-up" data-aos-offset="500"  data-aos-duration="3000" data-aos-delay="500" className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
             <form className="card-body" onSubmit={handleSubmit(onSubmit)}>
+            
               <div className="form-control">
                 <label className="label">
                   <span className="label-text">
