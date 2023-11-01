@@ -63,7 +63,7 @@ const About = () => {
 
           {/* Team image slider */}
           <div
-            data-aos="fade-left"
+            data-aos="fade-up"
             data-aos-duration="1000"
             data-aos-delay="500"
             className=" flex flex-col items-center"
