@@ -2,8 +2,8 @@ const style = {
     "height":"100vh",
     "width":"100vw",
     "display":"flex",
-    "justify-content":"center",
-    "align-items":"center"
+    "justifyContent":"center",
+    "alignItems":"center"
 }
 export default function BlogPage(){
     return (<>

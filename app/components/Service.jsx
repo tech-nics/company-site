@@ -17,7 +17,7 @@ const Service = () => {
     // })
 
   return (
-    <div id='services-offered' className=' bg-white text-black py-20'>
+    <div data-aos="fade-up" data-aos-duration="2000" data-aos-delay="800" id='services-offered' className=' bg-white text-black py-20'>
 
         <h1 className=' text-center mb-28 text-[2rem] font-extrabold  w-10/12 mx-auto'>
             See What Our Agency 
@@ -49,6 +49,7 @@ const Service = () => {
                         <div className=' group-hover:translate-y-14 transition-all duration-300 bg-white absolute hidden lg:flex md:flex items-center justify-center
                         w-full h-full rounded-3xl '>
                             <Image
+                            alt='svc-img'
                             className='w-30 h-30 '
                             src={service.image}
                             width={100}

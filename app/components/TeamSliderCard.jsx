@@ -3,7 +3,7 @@ import React from 'react'
 
 const TeamSliderCard = ({member}) => {
   return (
-    <div className='card p-4 gap-5'>
+    <div className='w-full h-full p-4 text-white flex flex-col gap-5'>
         {/* w-full h-full p-4 text-white flex flex-col */}
         {/* Image and description */}
         <div className=' flex gap-4 border-b-2 pb-5'>
@@ -11,6 +11,7 @@ const TeamSliderCard = ({member}) => {
             <div className=' lg:w-20 lg:h-20 md:w-20  md:h-20 h-10 w-20
             relative rounded-full overflow-hidden'>
                 <Image
+                alt='usr-img'
                     className=' object-cover'
                     src={member.image}
                     fill
