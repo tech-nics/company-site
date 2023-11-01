@@ -9,8 +9,8 @@ const ContactUs = () => {
         <div className="hero-content flex-col lg:flex-row">
           {/*  */}
           <div data-aos="fade-right"  data-aos-duration="1000"  className="text-center lg:text-left">
-            <h1 className="text-4xl text-white font-bold capitalize">
-              Feel free to send us your websites or bussiness needs
+            <h1 className="text-2xl text-white font-bold capitalize">
+            Contact Tech Plus Nics now and let's embark on a transformative digital journey for your business's success. 
             </h1>
             <div className="py-6 text-2xl flex flex-col items-center gap-4 md:flex-row lg:justify-start md:justify-center  md:items-center md:gap-[20px] font-[600] text-white">
               <span>For any enquiry, Call Us:</span>

@@ -6,7 +6,7 @@ const TeamSliderCard = ({member}) => {
     <div className='w-full h-full p-4 text-white flex flex-col gap-5'>
         {/* w-full h-full p-4 text-white flex flex-col */}
         {/* Image and description */}
-        <div className=' flex gap-4 border-b-2 pb-5'>
+        <div className=' flex flex-wrap gap-2 border-b-2 pb-5'>
             {/* Profile image */}
             <div className=' lg:w-20 lg:h-20 md:w-20  md:h-20 h-10 w-20
             relative rounded-full overflow-hidden'>
@@ -20,7 +20,7 @@ const TeamSliderCard = ({member}) => {
 
             {/* Name and description */}
             <div>
-                <h6 className=' lg:text-xl  md:text-xl text-lg font-bold'>
+                <h6 className=' lg:text-xl  md:text-xl text-sm font-bold'>
                     {member.name}
                 </h6>
                 <p className=' text-sm'>

@@ -15,9 +15,7 @@ const Service = () => {
         <h1  data-aos="fade-up" data-aos-duration="2000" data-aos-delay="800" className=' text-center mb-28 text-[2rem] font-extrabold  w-10/12 mx-auto'>
             See What Our Agency 
             <br/>
-            <span className=' text-blue-500'>Offer</span> & What
-            <br/>
-            We <span className=' text-red-500'>Provide</span>
+            <span className=' text-blue-500'>Offer</span> 
         </h1>
 
         <div className=' grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-8 gap-y-12 md:gap-y-16  w-10/12 mx-auto'>
