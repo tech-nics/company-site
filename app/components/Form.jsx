@@ -31,50 +31,51 @@ export default function Form(){
     // 
     // data-aos-offset="500"
     return(
-        <div data-aos="fade-up"  data-aos-duration="1000" data-aos-delay="500" className="card   w-full  shadow-2xl bg-base-100">
-            <form className="card-body" onSubmit={handleSubmit(onSubmit)}>
+        <div data-aos="fade-up"  data-aos-duration="1000" data-aos-delay="500" className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+            <form className=" flex flex-col gap-2 lg:gap-5 p-3 lg:p-6" onSubmit={handleSubmit(onSubmit)}>
             
-              <div className="form-control">
-                <label className="label">
-                  <span className="label-text">
+              <div className=" flex flex-col gap-1">
+                <label className="">
+                  <span className="">
                     Name <span className="text-[#FF0000] text-[20px]">*</span>{" "}
                   </span>
                 </label>
                 <input
                   type="text"
                   placeholder="name"
-                  className="input input-bordered"
+                  className=" border p-2 rounded-md focus:outline-none"
                   {...register("name",{required:true, pattern:/^[a-zA-Z\s]+$/})}
                 />
                 {errors.name && <span className="text-[#FF0000]">This field is required</span>}
               </div>
-              <div className="form-control">
-                <label className="label">
-                  <span className="label-text">
+              <div className=" flex flex-col gap-1">
+                <label className="">
+                  <span className="">
                     Email <span className="text-[#FF0000] text-[20px]">*</span>
                   </span>
                 </label>
                 <input
                   type="email"
                   placeholder="email"
-                  className="input input-bordered"
+                  className=" border p-2 rounded-md focus:outline-none"
                   {...register("email",{required:true, pattern:/[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/})}
                 />
                 {errors.email && <span className="text-[#FF0000]">This field is required</span>}
               </div>
-              <div className="form-control">
+              <div className=" flex flex-col gap-1">
+                <label>Message</label>
                 <textarea
                   type="text"
                   placeholder="message"
-                  className="input input-bordered h-52"
+                  className=" border p-2 rounded-md focus:outline-none"
                   {...register("msg",{required:true, minLength:5})}
                 />
                 {errors.msg && <span className="text-[#FF0000]">This field is required</span>}
               </div>
-              <div className="form-control mt-6">
-                <button   type="submit" className="btn btn-primary">Send</button>
+              <div className=" bg-blue-600 w-fit py-1 px-2 rounded-md">
+                <button   type="submit" className="">Send</button>
               </div>
             </form>
-          </div>
+        </div>
     )
 }
