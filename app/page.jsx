@@ -6,6 +6,7 @@ import ContactUs from './components/ContactUs'
 import { useEffect } from "react";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Portfolio from './components/Portfolio'
 
 
 
@@ -21,8 +22,8 @@ export default function Home() {
         <Hero/>
         <About/>
         <Service/>
-        {/* <Portfolio/>
-        <Blogs/> */}
+        <Portfolio/>
+        {/* <Blogs/> */}
         <ContactUs/>
 
     </main>

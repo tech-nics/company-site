@@ -11,7 +11,7 @@ export const services = [
     },
     {
         title: "Affordability",
-        description: "We believe that every business, regardless of its size, should have access to high-quality digital services. Our pricing is competitive, and we offer flexible packages to suit your budget.",
+        description: "We believe that every business, regardless of its size, should have access to high-quality digital services. Our pricing is competitive, and we offer packages that suit your budget.",
         image: "/about-left-image.png"
     },
     {

@@ -48,7 +48,7 @@ const TeamSlider = () => {
 
   return (
     
-    <div className=" lg:w-[25rem] md:w-[25rem] sm:w-[25rem] w-[15rem] lg:h-[25rem] md:h-[25rem] sm:h-[25rem] h-[15rem] overflow-hidden cursor-pointer rounded-2xl">
+    <div className=" lg:w-[25rem] md:w-[25rem] sm:w-[25rem] w-[16rem] lg:h-[25rem] md:h-[25rem] sm:h-[25rem] h-[16rem] overflow-hidden cursor-pointer rounded-2xl">
       <div ref={sliderRef} className="keen-slider w-full h-full">
         {
             teamProfile.map( (member, index) => (

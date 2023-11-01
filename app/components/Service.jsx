@@ -10,7 +10,7 @@ const Service = () => {
   
 
   return (
-    <div id='services-offered' className=' bg-white text-black py-20'>
+    <div id='services-offered' className=' bg-white text-black py-28'>
         {/*  */}
         <h1  data-aos="fade-up" data-aos-duration="2000" data-aos-delay="800" className=' text-center mb-28 text-[2rem] font-extrabold  w-10/12 mx-auto'>
             See What Our Agency 
@@ -27,8 +27,8 @@ const Service = () => {
                     className=' relative h-[15rem] group lg:cursor-pointer md:cursor-pointer rounded-3xl shadow-[0_8px_30px_rgb(0,0,0,0.12)]'
                     key={index}>
                         {/* Title and description */}
-                        <div className=' lg:group-hover:-translate-y-14 md:group-hover:-translate-y-14 transition-all duration-300 absolute rounded-3xl p-4 h-full
-                        flex flex-col items-center bg-gradient-to-r from-[rgba(255,77,30,1)] to-[rgba(255,44,109,1)] text-white '>
+                        <div className=' lg:group-hover:-translate-y-28 md:group-hover:-translate-y-14 transition-all duration-300 absolute rounded-3xl p-4 h-full
+                        flex flex-col lg:justify-start justify-evenly items-center bg-gradient-to-r from-[rgba(255,77,30,1)] to-[rgba(255,44,109,1)] text-white '>
                             <h5 className=' text-xl font-extrabold'>
                                 {service.title}
                             </h5>
@@ -37,7 +37,7 @@ const Service = () => {
                             </p>
                         </div>
                         {/* Image */}
-                        <div className=' group-hover:translate-y-14 transition-all duration-300 bg-white absolute hidden lg:flex md:flex items-center justify-center
+                        <div className=' group-hover:translate-y-28 transition-all duration-300 bg-white absolute hidden lg:flex  items-center justify-center
                         w-full h-full rounded-3xl '>
                             <Image
                             alt='svc-img'
