@@ -1,5 +1,4 @@
 "use client"
-import React, { useEffect } from 'react'
 import { services } from '../data/service'
 import Image from 'next/image'
 // import AOS from 'aos';
@@ -8,18 +7,12 @@ import Image from 'next/image'
 
 const Service = () => {
 
-    // useEffect( () => {
-    //     AOS.init({
-    //         duration: 1000,
-    //         once: false,
-    //         // delay:500
-    //     })
-    // })
+  
 
   return (
     <div id='services-offered' className=' bg-white text-black py-20'>
-
-        <h1 data-aos="fade-up" data-aos-duration="2000" data-aos-delay="800" className=' text-center mb-28 text-[2rem] font-extrabold  w-10/12 mx-auto'>
+        {/*  */}
+        <h1  data-aos="fade-up" data-aos-duration="2000" data-aos-delay="800" className=' text-center mb-28 text-[2rem] font-extrabold  w-10/12 mx-auto'>
             See What Our Agency 
             <br/>
             <span className=' text-blue-500'>Offer</span> & What

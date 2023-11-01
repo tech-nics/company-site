@@ -2,7 +2,7 @@
 const Hero = () => {
     return (
         <>
-          <div className="bg-white p-3 translate-y-16  mb-8  w-100  bg-no-repeat  bg-[url('/baner-right.png'),_url('/baner-left.png')] bg-[position:right_top,_left_top]">
+          <div className="bg-white p-3 translate-y-16  mb-8  w-[100%]   bg-no-repeat  bg-[url('/baner-right.png'),_url('/baner-left.png')] bg-[position:right_top,_left_top]">
             <div className=" px-10 w-full min-h-[calc(100vh-4rem)] overflow-hidden  flex flex-row flex-wrap max-md:flex-col max-md:justify-center max-md:items-center max-md:gap-[40px] justify-between items-center ">
               {/* left div */}
               <div className="flex animate-moveLeft flex-col justify-start md:max-w-[48%]    items-start">

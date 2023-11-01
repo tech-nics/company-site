@@ -12,14 +12,12 @@ import 'aos/dist/aos.css';
 export default function Home() {
     useEffect(() => {
         AOS.init({
-          easing: "ease-out-cubic",
-          once: true,
-          offset: 50,
+          once:true
         });
       }, []);
     
   return (
-    <main>
+    <main >
         <Hero/>
         <About/>
         <Service/>

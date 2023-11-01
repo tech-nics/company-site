@@ -46,8 +46,9 @@ const About = () => {
 
             {/* Rigth image */}
             <Image 
+            loading='eager'
             data-aos="fade-right"
-            data-aos-duration="2000"
+            data-aos-duration="1000"
             data-aos-delay="500"
             alt='About image'
             className=' w-[250] h-[250] lg:w-[400px] lg:h-[400px] md:w-[500px] md:h-[500px]'
@@ -58,8 +59,8 @@ const About = () => {
 
             {/* Team image slider */}
             <div
-            data-aos="fade-left"
-            data-aos-duration="2000"
+            data-aos="fade-up"
+            data-aos-duration="1000"
             data-aos-delay="500"
             className=' flex flex-col items-center'>
                 <h3 className=' text-center mb-5 text-[2rem] font-extrabold lg:text-white p-4'> Meet Our team</h3>
