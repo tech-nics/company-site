@@ -2,11 +2,12 @@ import Form from "./Form";
 import Image from "next/image";
 
 const ContactUs = () => {
+    // data-aos-offset="500"
   return (
     <>
-      <div className="py-20 hero min-h-screen  bg-fit bg-[url('https://templatemo.com/templates/templatemo_562_space_dynamic/assets/images/contact-bg.png')]">
+      <div id="contact-us" className="py-20 hero min-h-screen w-screen  bg-fit bg-[url('https://templatemo.com/templates/templatemo_562_space_dynamic/assets/images/contact-bg.png')]">
         <div className="hero-content flex-col lg:flex-row">
-          <div data-aos="fade-right" data-aos-offset="500" data-aos-duration="3000"  className="text-center lg:text-left">
+          <div data-aos="fade-right"  data-aos-duration="3000"  className="text-center lg:text-left">
             <h1 className="text-4xl text-white font-bold capitalize">
               Feel free to send us your websites or bussiness needs
             </h1>

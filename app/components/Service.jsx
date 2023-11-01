@@ -17,9 +17,9 @@ const Service = () => {
     // })
 
   return (
-    <div data-aos="fade-up" data-aos-duration="2000" data-aos-delay="800" id='services-offered' className=' bg-white text-black py-20'>
+    <div id='services-offered' className=' bg-white text-black py-20'>
 
-        <h1 className=' text-center mb-28 text-[2rem] font-extrabold  w-10/12 mx-auto'>
+        <h1 data-aos="fade-up" data-aos-duration="2000" data-aos-delay="800" className=' text-center mb-28 text-[2rem] font-extrabold  w-10/12 mx-auto'>
             See What Our Agency 
             <br/>
             <span className=' text-blue-500'>Offer</span> & What
