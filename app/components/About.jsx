@@ -40,7 +40,7 @@ const About = () => {
             </em>
             . &nbsp; As your trusted ally, we tailor our expertise to your
             unique business needs. With a focus on reliability, affordability,
-            and cutting-edge technology, we're here to propel your online
+            and cutting-edge technology, we {`\'`} re here to propel your online
             presence to new heights. Join us on the path to digital
             transformation. Contact TPN today for a brighter online future.
           </p>

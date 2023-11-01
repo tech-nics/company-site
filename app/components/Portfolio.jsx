@@ -17,16 +17,19 @@ const Portfolio = () => {
          data-aos-delay="500"
         className=' flex flex-wrap flex-col lg:flex-row items-center gap-y-6 justify-evenly w-full'>
             <Image
+            alt='client1'
             src="/client1.jpg"
             width={200}
             height={200}
             />
             <Image
+            alt='client2'
             src="/client2.jpg"
             width={200}
             height={200}
             />
             <Image
+            alt='client3'
             src="/client3.jpg"
             width={200}
             height={200}
