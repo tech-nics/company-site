@@ -35,18 +35,18 @@ const Footer = () => {
             {/* Navigations */}
             <div className=' flex flex-col gap-2'>
                 <header className=' font-bold text-lg'>Navigations</header>
-                <Link href="#">Home</Link>
-                <Link href="#">About Us</Link>
-                <Link href="#">Service</Link>
-                <Link href="#">Contact Us</Link>
+                <Link href="#hero">Home</Link>
+                <Link href="#about-us">About Us</Link>
+                <Link href="#services-offered">Service</Link>
+                <Link href="#contact-us">Contact Us</Link>
             </div>
 
             {/* Address and email address */}
             <div className=' flex flex-col gap-2'>
                 <header className=' font-bold text-lg'>Address & Email</header>
-                <p className=' flex gap-2 items-center'><BsTelephoneFill className=' text-blue-800' size={20}/> 12345677890 / 12345667890</p>
-                <p className=' flex gap-2 items-center'><BsWhatsapp className=' text-green-600' size={20} /> 1234567890</p>
-                <p className=' flex gap-2 items-center' ><AiOutlineMail className=' text-orange-700' size={20} /> <a href="mailto:someone@example.com"> abc@gmail.con</a></p>
+                <p className=' flex gap-2 items-center'><BsTelephoneFill className=' text-blue-800' size={20}/><a href='tel:9702306434'>Call</a></p>
+                <p className=' flex gap-2 items-center'><BsWhatsapp className=' text-green-600' size={20} /> <a href="https://api.whatsapp.com/send?phone=7798691513">Send What {`&apos`} s app Message</a></p>
+                <p className=' flex gap-2 items-center' ><AiOutlineMail className=' text-orange-700' size={20} /><a href="mailto:tanmayrane51@gmail.com">Send email</a></p>
             </div>
         </div>
 

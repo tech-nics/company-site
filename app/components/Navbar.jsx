@@ -26,7 +26,7 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="navbar-end">
-      <button  className="hover:bg-[#03a4ed] transition-colors duration-700 md:text-[14px]  block max-[500px]:px-2 max-[500px]:py-1 max-[380px]:hidden px-5 py-2 rounded-[23px] bg-[#fe3f40] text-[#fff] font-[600] max-[400px]:tracking-normal tracking-[2px]">Contact Us</button>                   
+      <a href="#contact-us"  className="hover:bg-[#03a4ed] transition-colors duration-700 md:text-[14px]  block max-[500px]:px-2 max-[500px]:py-1 max-[380px]:hidden px-5 py-2 rounded-[23px] bg-[#fe3f40] text-[#fff] font-[600] max-[400px]:tracking-normal tracking-[2px]">Contact Us</a>                   
       </div>
     </div>
       );
