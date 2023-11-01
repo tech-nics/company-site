@@ -74,7 +74,7 @@ const Footer = () => {
 
                 <Link 
                 className=' text-blue-800 p-2 hover:bg-blue-900 hover:bg-opacity-60 rounded-full hover:text-white  transition-all duration-300' 
-                target='_blank' href="#"> <FaLinkedinIn size={25} /> </Link>
+                target='_blank' href="https://www.linkedin.com/in/techplusnics/"> <FaLinkedinIn size={25} /> </Link>
 
                 <Link 
                 className=' text-red-600 p-2 hover:bg-red-600 hover:bg-opacity-60 rounded-full hover:text-white  transition-all duration-300' 

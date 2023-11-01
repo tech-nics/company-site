@@ -3,7 +3,9 @@ const style = {
     "width":"100vw",
     "display":"flex",
     "justifyContent":"center",
-    "alignItems":"center"
+    "alignItems":"center",
+    "fontSize": "2rem",
+    "fontWeight": "900"
 }
 export default function BlogPage(){
     return (<>

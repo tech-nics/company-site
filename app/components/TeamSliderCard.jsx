@@ -6,7 +6,7 @@ const TeamSliderCard = ({member}) => {
     <div className='w-full h-full p-4 text-white flex flex-col gap-5'>
         {/* w-full h-full p-4 text-white flex flex-col */}
         {/* Image and description */}
-        <div className=' flex flex-col gap-2 lg:border-b-2 md:lg:border-b-2 pb-5'>
+        <div className=' flex flex-col gap-2 border-blue-300 lg:border-b-2 md:lg:border-b-2 pb-5'>
             {/* Profile image */}
             <div className=' lg:w-20 lg:h-20 md:w-20  md:h-20 h-20 w-20
             relative rounded-full overflow-hidden'>
@@ -20,10 +20,10 @@ const TeamSliderCard = ({member}) => {
 
             {/* Name and description */}
             <div>
-                <h6 className=' lg:text-xl  md:text-xl text-sm font-bold'>
+                <h6 className=' lg:text-xl drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]  md:text-xl text-sm font-bold'>
                     {member.name}
                 </h6>
-                <p className=' text-sm '>
+                <p className=' text-sm  text-slate-200'>
                     {member.description}
                 </p>
             </div>
@@ -31,8 +31,8 @@ const TeamSliderCard = ({member}) => {
 
         {/* Expertise */}
         <div className=' hidden lg:block md:block'>
-            <p className=' text-lg font-bold mb-1'>Expertise</p>
-            <ul className=' text-blue-400 font-extrabold'>
+            <p className=' text-lg font-bold mb-1  '>Expertise</p>
+            <ul className=' font-extrabold'>
             {
                 member.role.map( (exp, index) => (
                     <li key={index}>✔ {exp}</li>
