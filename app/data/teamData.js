@@ -1,60 +1,61 @@
 export const teamProfile = [
     {
         name: "Kalyan Singh",
-        description: 'Lorem ipsum dolor sit amet, consectetur',
+        description: 'Our cybersecurity experts will fortify your digital assets, ensuring that your data and online presence are safe from cyber threats',
         role: [
-            "Marketing",
-            "Product Designer",
-            "SEO"
+            "Cyber Security",
+            "Digital Asset Management",
+            "Accounting Service"
         ],
         image:"/dummy-image.jpg",
     },
     {
         name: "Aditya Shirsat",
-        description: 'Lorem ipsum dolor sit amet, consectetur',
+        description: 'Our content creators will develop compelling, informative, and shareable content that resonates with your audience and drives engagement.',
         role: [
-            "Marketing",
-            "Product Designer",
-            "SEO"
+            "UI designing",
+            "Graphic designing",
+            "Social Media Handling"
         ],
         image:"/dummy-image.jpg",
     },
     {
         name: "Sobit Samantha",
-        description: 'Lorem ipsum dolor sit amet, consectetur',
+        description: 'We have a team of marketing wizards who specialize in creating tailored strategies to boost your online presence',
         role: [
-            "Marketing",
-            "Product Designer",
-            "SEO"
+            "Content Creation",
+            "Cross Platform App Development",
+            "SEO Expertise"
         ],
         image:"/dummy-image.jpg",
     },
     {
         name: "Vishal Pandey",
-        description: 'Lorem ipsum dolor sit amet, consectetur',
+        description: 'With Flutter experts on board, we can help you extend your reach to mobile users with seamless, feature-rich mobile applications.',
         role: [
-            "Marketing",
-            "Product Designer",
-            "SEO"
+            "Cross Platform App Development",
+            "Web Development",
+            "Cyber Security"
         ],
         image:"/dummy-image.jpg",
     },
     {
         name: "Tanmay Rane",
-        description: 'Lorem ipsum dolor sit amet, consectetur',
+        description: 'Our expert developers will craft a responsive, user-friendly, and visually stunning website that reflects your brand and engages your audience.',
         role: [
-            "Marketing",
-            "Product Designer",
-            "SEO"
+            "Frontend development",
+            "Website Modification",
+            "Responsive Web Design"
         ],
         image:"/dummy-image.jpg",
     },
     {
         name: "Vivek Shrivatsav",
-        description: 'Lorem ipsum dolor sit amet, consectetur',
+        description: `From search engine optimization (SEO) and pay-per-click (PPC) advertising to social media marketing, we've got you covered`,
         role: [
-            "Marketing",
-            "Product Designer",
+            "Digital Marketing",
+            "Android Application",
+            "VFX and Graphic Editing",
             "SEO"
         ],
         image:"/dummy-image.jpg",
