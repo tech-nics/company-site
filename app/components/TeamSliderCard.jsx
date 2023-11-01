@@ -6,9 +6,9 @@ const TeamSliderCard = ({member}) => {
     <div className='w-full h-full p-4 text-white flex flex-col gap-5'>
         {/* w-full h-full p-4 text-white flex flex-col */}
         {/* Image and description */}
-        <div className=' flex flex-wrap gap-2 border-b-2 pb-5'>
+        <div className=' flex flex-col gap-2 lg:border-b-2 md:lg:border-b-2 pb-5'>
             {/* Profile image */}
-            <div className=' lg:w-20 lg:h-20 md:w-20  md:h-20 h-10 w-20
+            <div className=' lg:w-20 lg:h-20 md:w-20  md:h-20 h-20 w-20
             relative rounded-full overflow-hidden'>
                 <Image
                 alt='usr-img'
@@ -23,14 +23,14 @@ const TeamSliderCard = ({member}) => {
                 <h6 className=' lg:text-xl  md:text-xl text-sm font-bold'>
                     {member.name}
                 </h6>
-                <p className=' text-sm'>
+                <p className=' text-sm '>
                     {member.description}
                 </p>
             </div>
         </div>
 
         {/* Expertise */}
-        <div>
+        <div className=' hidden lg:block md:block'>
             <p className=' text-lg font-bold mb-1'>Expertise</p>
             <ul className=' text-blue-400 font-extrabold'>
             {

@@ -22,7 +22,11 @@ const About = () => {
     >
       <div className="lg:w-10/12 md:w-10/12 w-full  mx-auto">
         {/* Company Description */}
-        <div className=" text-black flex  flex-col items-center gap-5 mb-5">
+        <div
+        data-aos="fade-down"
+        data-aos-duration="1000"
+        data-aos-delay="500"
+        className=" text-black flex  flex-col items-center gap-5 mb-5">
           <h2 className=" text-[3rem] mt-5 font-extrabold  text-orange-400">
             Tech<span className=" text-blue-500">nics</span>
           </h2>
@@ -59,7 +63,7 @@ const About = () => {
 
           {/* Team image slider */}
           <div
-            data-aos="fade-up"
+            data-aos="fade-left"
             data-aos-duration="1000"
             data-aos-delay="500"
             className=" flex flex-col items-center"

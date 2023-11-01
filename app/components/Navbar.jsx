@@ -15,11 +15,11 @@ const Navbar = () => {
             <li><Link href="/blog" className="font-[600]">Blog</Link></li>
           </ul>
         </div>
-        <a className="font-[700] uppercase text-[#03a4ed] max-[500px]:text-[20px]  md:text-[16px] lg:text-[32px] tracking-[4px]">Techplus<span className="text-[#dc3545] font-[700] uppercase md:text-[16px] lg:text-[32px]">nics</span></a>
+        <Link href="#hero" className="font-[700] uppercase text-[#03a4ed] max-[500px]:text-[20px]  md:text-[16px] lg:text-[32px] tracking-[4px]">Techplus<span className="text-[#dc3545] font-[700] uppercase md:text-[16px] lg:text-[32px]">nics</span></Link>
       </div>
       <div className="navbar-center gap-2 hidden md:flex">
         <ul className="menu menu-horizontal px-1">
-          <li><a href="#" className="font-[600] md:text-[14px] lg:text-[20px]">Home</a></li>
+          <li><a href="#hero" className="font-[600] md:text-[14px] lg:text-[20px]">Home</a></li>
           <li><a href="#about-us" className="font-[600] md:text-[14px] lg:text-[20px]">About Us</a></li>
           <li><a href="#services-offered" className="font-[600] md:text-[14px] lg:text-[20px]">Services</a></li>
           <li><Link href="/blog" className="font-[600] md:text-[14px] lg:text-[20px]">Blog</Link></li>

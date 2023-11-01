@@ -22,7 +22,7 @@ const ContactUs = () => {
                   src="/phone.png"
                   alt="phone"
                 />{" "}
-                &nbsp;<span className="inline-block">7586969746</span>
+                &nbsp;<span className="inline-block">8668679847</span>
               </div>
             </div>
           </div>

@@ -7,7 +7,7 @@ export const teamProfile = [
             "Digital Asset Management",
             "Accounting Service"
         ],
-        image:"/dummy-image.jpg",
+        image:"/profile-kalyan.png",
     },
     {
         name: "Aditya Shirsat",
@@ -17,7 +17,7 @@ export const teamProfile = [
             "Graphic designing",
             "Social Media Handling"
         ],
-        image:"/dummy-image.jpg",
+        image:"/profile-aditya.png",
     },
     {
         name: "Sobit Samantha",
@@ -27,7 +27,7 @@ export const teamProfile = [
             "Cross Platform App Development",
             "SEO Expertise"
         ],
-        image:"/dummy-image.jpg",
+        image:"/profile-sobit.png",
     },
     {
         name: "Vishal Pandey",
@@ -37,7 +37,7 @@ export const teamProfile = [
             "Web Development",
             "Cyber Security"
         ],
-        image:"/dummy-image.jpg",
+        image:"/profile-vishal.png",
     },
     {
         name: "Tanmay Rane",
@@ -47,7 +47,7 @@ export const teamProfile = [
             "Website Modification",
             "Responsive Web Design"
         ],
-        image:"/dummy-image.jpg",
+        image:"/profile-tanmay.png",
     },
     {
         name: "Vivek Shrivatsav",
@@ -58,6 +58,6 @@ export const teamProfile = [
             "VFX and Graphic Editing",
             "SEO"
         ],
-        image:"/dummy-image.jpg",
+        image:"/profile-vivek.png",
     },
 ]
