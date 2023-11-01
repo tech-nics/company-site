@@ -7,6 +7,7 @@ export default function Form(){
         register,
         handleSubmit,
         watch,
+        reset,
         formState: { errors },
       } = useForm()
 
@@ -16,12 +17,15 @@ export default function Form(){
         toast.success("Sent successfuly",{
           description: "You will get a call from our side within 1hr",
         })
+        reset({ name: "", email: "", msg: ""})
         return
       }
 
       toast.error("Something unexpected occured",{
         description:"Please try again"
       })
+
+      reset({ name: "", email: "", msg: ""})
       
     }
 
