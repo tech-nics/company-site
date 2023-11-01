@@ -31,7 +31,7 @@ export default function Form(){
     // 
     // data-aos-offset="500"
     return(
-        <div data-aos="fade-up"  data-aos-duration="1000" data-aos-delay="500" className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+        <div data-aos="fade-up"  data-aos-duration="1000" data-aos-delay="500" className="card   w-full  shadow-2xl bg-base-100">
             <form className="card-body" onSubmit={handleSubmit(onSubmit)}>
             
               <div className="form-control">
