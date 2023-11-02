@@ -27,17 +27,15 @@ const About = () => {
         data-aos-duration="1000"
         data-aos-delay="500"
         className=" text-black flex  flex-col items-center gap-5 mb-5">
-          <h2 className=" text-[3rem] mt-5 font-extrabold  text-orange-400">
-            Tech<span className=" text-blue-500">nics</span>
+          <h2 className=" text-[3rem] mt-5 font-extrabold flex gap-2  text-orange-300">
+            Tech<span className=" lg:text-white text-red-500 ">+</span><span className=" text-blue-500">nics</span>
           </h2>
-          <p className={`font-bold lg:text-white text-lg  p-4`}>
+          <p className={`font-bold lg:text-white text-lg   p-4`}>
             Tech Plus Nics, also known as TPN, is your gateway to success in the
             digital realm. Our&nbsp;
-            <em className="font-[600]">
               services encompass website development, digital marketing,
               cybersecurity, content creation, app development, digital asset
               management, and accounting support.
-            </em>
             . &nbsp; As your trusted ally, we tailor our expertise to your
             unique business needs. With a focus on reliability, affordability,
             and cutting-edge technology, we {`\'`} re here to propel your online

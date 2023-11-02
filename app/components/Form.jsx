@@ -12,8 +12,11 @@ export default function Form(){
       } = useForm()
 
     const onSubmit = async (data) => {
+
+        const toastId = toast.loading("Sending message...")
       const isdataSent = await sendEmail(data)
       if(isdataSent){
+        toast.dismiss(toastId)
         toast.success("Sent successfuly",{
           description: "You will get a call from our side within 1hr",
         })
@@ -21,6 +24,7 @@ export default function Form(){
         return
       }
 
+      toast.dismiss(toastId)
       toast.error("Something unexpected occured",{
         description:"Please try again"
       })
@@ -63,7 +67,7 @@ export default function Form(){
                 {errors.email && <span className="text-[#FF0000]">This field is required</span>}
               </div>
               <div className=" flex flex-col gap-1">
-                <label>Message</label>
+                <label>Message <span className="text-[#FF0000] text-[20px]">*</span>{" "}</label>
                 <textarea
                   type="text"
                   placeholder="message"
@@ -72,7 +76,7 @@ export default function Form(){
                 />
                 {errors.msg && <span className="text-[#FF0000]">This field is required</span>}
               </div>
-              <div className=" bg-blue-600 w-fit py-1 px-2 rounded-md">
+              <div className=" bg-blue-600 text-white hover:bg-blue-400 transition-all duration-300 self-end w-fit py-1 px-2 rounded-md">
                 <button   type="submit" className="">Send</button>
               </div>
             </form>
