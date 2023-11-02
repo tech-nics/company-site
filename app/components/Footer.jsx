@@ -18,7 +18,7 @@ const Footer = () => {
         className=' grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 gap-8 '>
 
             {/* Logo and description */}
-            <div className=''>
+            <div className=' flex flex-col gap-2'>
                 <div className=' flex items-center text-red-500 font-bold text-xl'>
                 <Image 
                 alt='website logo'
