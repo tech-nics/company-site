@@ -5,7 +5,7 @@ const ContactUs = () => {
     // data-aos-offset="500"
   return (
     <>
-      <div id="contact-us" className="py-20 hero min-h-screen  bg-fit bg-[url('https://templatemo.com/templates/templatemo_562_space_dynamic/assets/images/contact-bg.png')]">
+      <div id="contact-us" className="py-20  bg-cover bg-center flex items-center min-h-screen  bg-fit bg-[url('https://templatemo.com/templates/templatemo_562_space_dynamic/assets/images/contact-bg.png')]">
         <div className="hero-content flex-col lg:flex-row">
           {/*  */}
           <div data-aos="fade-right"  data-aos-duration="1000"  className="text-center lg:text-left">
