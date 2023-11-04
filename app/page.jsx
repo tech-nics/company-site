@@ -7,6 +7,7 @@ import { useEffect } from "react";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Portfolio from './components/Portfolio'
+import HomeAbout from './components/HomeAbout'
 
 
 
@@ -20,7 +21,8 @@ export default function Home() {
   return (
     <main >
         <Hero/>
-        <About/>
+        <HomeAbout/>
+        {/* <About/> */}
         <Service/>
         <Portfolio/>
         {/* <Blogs/> */}
