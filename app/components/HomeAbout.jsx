@@ -29,7 +29,12 @@ const HomeAbout = ({direction, heading}) => {
                     }
                 </div>
                 <p>
-                    Tech Plus Nics, also known as TPN, is your gateway to success in the digital realm. Our  services encompass website development, digital marketing, cybersecurity, content creation, app development, digital asset management, and accounting support.   Contact TPN today for a brighter online future. 
+                    {
+                        heading?
+                        'Empower Your Online Presence with Tech Plus Nics: Our array of digital services includes web design, cybersecurity, digital marketing, SEO, social media marketing, social media advertising, and streamlined digital registration. Dive into the specifics of each service to enhance your online success.'
+                        :
+                        'Tech Plus Nics, also known as TPN, is your gateway to success in the digital realm. Our  services encompass website development, digital marketing, cybersecurity, content creation, app development, digital asset management, and accounting support.   Contact TPN today for a brighter online future. '
+                    }
                 </p>
                 <Link 
                 className=" px-4 py-2 border-2 border-red-600 w-fit rounded-xl hover:text-white hover:bg-red-600 hover:border-white transition-all duration-500"
