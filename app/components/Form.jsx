@@ -36,7 +36,7 @@ export default function Form(){
     // data-aos-offset="500"
     return(
         <div data-aos="fade-up"  data-aos-duration="1000" data-aos-delay="500" className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
-            <form className=" flex flex-col gap-2 lg:gap-5 p-3 lg:p-6" onSubmit={handleSubmit(onSubmit)}>
+            <form className=" flex flex-col gap-2 lg:gap-5 p-[6px] md:p-4  lg:p-6" onSubmit={handleSubmit(onSubmit)}>
             
               <div className=" flex flex-col gap-1">
                 <label className="">
@@ -46,7 +46,7 @@ export default function Form(){
                 </label>
                 <input
                   type="text"
-                  placeholder="name"
+                  placeholder="Enter You Name"
                   className=" border p-2 rounded-md focus:outline-none"
                   {...register("name",{required:true, pattern:/^[a-zA-Z\s]+$/})}
                 />
@@ -60,7 +60,7 @@ export default function Form(){
                 </label>
                 <input
                   type="email"
-                  placeholder="email"
+                  placeholder="Enter your email Id"
                   className=" border p-2 rounded-md focus:outline-none"
                   {...register("email",{required:true, pattern:/[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/})}
                 />
@@ -70,7 +70,7 @@ export default function Form(){
                 <label>Message <span className="text-[#FF0000] text-[20px]">*</span>{" "}</label>
                 <textarea
                   type="text"
-                  placeholder="message"
+                  placeholder="Enter Your message"
                   className=" border p-2 rounded-md focus:outline-none"
                   {...register("msg",{required:true, minLength:5})}
                 />

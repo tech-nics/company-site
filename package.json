@@ -17,7 +17,8 @@
     "react-dom": "^18",
     "react-hook-form": "^7.47.0",
     "react-icons": "^4.11.0",
-    "sonner": "^1.1.0"
+    "sonner": "^1.1.0",
+    "swiper": "^11.0.3"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.16",

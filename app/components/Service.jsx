@@ -40,7 +40,7 @@ const Service = () => {
                         <div className=' group-hover:translate-y-28 transition-all duration-300 bg-white absolute hidden lg:flex  items-center justify-center
                         w-full h-full rounded-3xl '>
                             <Image
-                            alt='svc-img'
+                            alt={service.title}
                             className='w-30 h-30 '
                             src={service.image}
                             width={100}

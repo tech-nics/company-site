@@ -15,6 +15,8 @@ module.exports = {
         'moveRight': 'moveRight 2s ease-in-out forwards',
         'moveDown': 'moveDown 0.8s forwards',
         'moveUp': 'moveUp 0.8s forwards',
+        "arrow": "arrow 1s infinite",
+        "blink": " blink 1s  infinite forwards "
       },
       keyframes: {
         moveRight:{
@@ -33,6 +35,14 @@ module.exports = {
           '0%': { transform: 'translateY(8000px)' },
           '100%': { transform: 'translateY(0px)' },
         },
+        arrow:{
+            "0%": { fontSize: "1rem" },
+            "100%": { fontSize: "5rem" },
+        },
+        blink:{
+            "0%": {opacity: "60%"},
+            "100%": {opacity: "100%"}
+        }
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',

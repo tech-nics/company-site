@@ -11,7 +11,7 @@ const TeamSliderCard = ({member}) => {
             <div className=' lg:w-20 lg:h-20 md:w-20  md:h-20 h-20 w-20
             relative rounded-full overflow-hidden'>
                 <Image
-                alt='usr-img'
+                    alt={member.name}
                     className=' object-cover'
                     src={member.image}
                     fill

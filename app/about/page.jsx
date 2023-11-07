@@ -3,7 +3,9 @@ import About from '../components/About'
 
 const page = () => {
   return (
-    <About/>
+    <div className=' pt-10'>
+        <About/>
+    </div>
   )
 }
 
