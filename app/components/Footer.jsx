@@ -5,7 +5,7 @@ import {BsTwitter, BsLinkedin, BsInstagram, BiLogoFacebook, BsWhatsapp, BsTeleph
 import { AiOutlineMail} from "react-icons/ai"
 import { LiaTelegram } from "react-icons/lia"
 import {FaLinkedinIn, FaFacebookF } from "react-icons/fa"
-import { CiFacebook } from "react-icons/ci"
+import { MdRateReview } from "react-icons/md"
 
 const Footer = () => {
   return (
@@ -21,7 +21,7 @@ const Footer = () => {
             <div className=' flex flex-col gap-2'>
                 <div className=' flex items-center text-red-500 font-bold text-xl'>
                 <Image 
-                alt='website logo'
+                    alt='techplusnics-logo'
                     src="/logo.png"
                     width={80}
                     height={80}
@@ -44,10 +44,10 @@ const Footer = () => {
             {/* Navigations */}
             <div className=' flex flex-col gap-2'>
                 <header className=' font-bold text-lg'>Navigations</header>
-                <Link href="#hero">Home</Link>
-                <Link href="#about-us">About Us</Link>
-                <Link href="#services-offered">Service</Link>
-                <Link href="#contact-us">Contact Us</Link>
+                <Link href="/" scroll={true} >Home</Link>
+                <Link href="/about">About Us</Link>
+                <Link href="/service">Service</Link>
+                <Link href="/contact">Contact Us</Link>
             </div>
 
             {/* Address and email address */}
@@ -56,6 +56,7 @@ const Footer = () => {
                 <p className=' flex gap-2 items-center'><BsTelephoneFill className=' text-blue-800' size={20}/><a href='tel:8668679847'>+91 8668679847</a></p>
                 <p className=' flex gap-2 items-center'><BsWhatsapp className=' text-green-600' size={20} /> <a href="https://api.whatsapp.com/send?phone=7769964872">7769964872</a></p>
                 <p className=' flex gap-2 items-center' ><AiOutlineMail className=' text-orange-700' size={20} /><a href="mailto:techplusnics@gmail.com">techplusnics@gmail.com</a></p>
+                <p className=' flex gap-2 items-center' ><MdRateReview className=' text-pink-700' size={20} /><a target="_blank" href="https://g.page/r/CWy8VDbA0-lcEBM/review">Review our Site</a></p>
             </div>
         </div>
 

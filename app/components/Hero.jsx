@@ -25,12 +25,17 @@ const Hero = () => {
                 
               </div>
               {/* right div */}
-              <div className="flex flex-col animate-moveRight justify-center items-center max-md:mb-5  w-full h-[50%] md:w-[42%] md:h-[50%]  ">
-                <img
+              <div className="flex flex-col relative animate-moveRight group justify-center items-center max-md:mb-5  w-full h-[50%] md:w-[42%] md:h-[50%]  ">
+                {/* <img
                 alt="side-image"
                   className="h-full w-full object-contain "
                   src="/side-img.png"
-                />
+                /> */}
+                   
+                        <img alt="lapotopHeroBackGround" className=" hidden lg:block group-hover:translate-x-[5rem] group-hover:translate-y-[-5rem] group-hover:opacity-100 opacity-0  transition-all duration-700 absolute  z-[100]" src="/heroBackground.svg" /> 
+                        <img alt="lapotopHeroForeGround" className="hidden lg:block group-hover:translate-x-[-8rem] group-hover:translate-y-[5rem] group-hover:scale-75 backdrop-blur-sm  transition-all duration-700 absolute  z-[100]" src="/heroForeground.svg" /> 
+                    
+                        <img alt="mobil-tabletHero" src="/heroBackground.svg" className=" block lg:hidden w-full" />
               </div>
             </div>
           </div>

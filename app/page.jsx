@@ -7,6 +7,9 @@ import { useEffect } from "react";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Portfolio from './components/Portfolio'
+import HomeAbout from './components/HomeAbout'
+import Pricing from './components/Pricing'
+import Reviews from './components/Reviews'
 
 
 
@@ -20,8 +23,12 @@ export default function Home() {
   return (
     <main >
         <Hero/>
-        <About/>
+        <HomeAbout direction={" md:flex-row lg:flex-row"} />
+        <HomeAbout direction={" md:flex-row-reverse lg:flex-row-reverse"}  heading={"Services"}/>
+        {/* <About/> */}
         <Service/>
+        <Pricing/>
+        <Reviews/>
         <Portfolio/>
         {/* <Blogs/> */}
         <ContactUs/>
