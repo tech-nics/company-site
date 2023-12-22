@@ -8,6 +8,8 @@ export const teamProfile = [
             "Accounting Service"
         ],
         image:"/profile-kalyan.png",
+        title: "Chief Executive Officer (CEO)",
+        bio: "Responsible for overall strategic direction and decision-making."
     },
     {
         name: "Aditya Shirsat",
@@ -18,6 +20,8 @@ export const teamProfile = [
             "Social Media Handling"
         ],
         image:"/profile-aditya.png",
+        title: "Chief Operations Officer (COO)",
+        bio: " Manages day-to-day operations, ensuring efficiency and effectiveness."
     },
     {
         name: "Sobit Samantha",
@@ -28,6 +32,8 @@ export const teamProfile = [
             "SEO Expertise"
         ],
         image:"/profile-sobit.png",
+        title: "Chief Creative Officer (CCO)",
+        bio: " Leads graphic and web design, ensuring a visually appealing and cohesive brand."
     },
     {
         name: "Vishal Pandey",
@@ -38,6 +44,8 @@ export const teamProfile = [
             "Cyber Security"
         ],
         image:"/profile-vishal.png",
+        title: "Chief Technology Officer (CTO)",
+        bio: "Focuses on technology, web development, and application management."
     },
     {
         name: "Tanmay Rane",
@@ -48,6 +56,8 @@ export const teamProfile = [
             "Responsive Web Design"
         ],
         image:"/profile-tanmay.png",
+        title: "Chief Development Officer (CDO)",
+        bio: "Manages app development and other technical aspects of the company."
     },
     {
         name: "Vivek Shrivatsav",
@@ -59,5 +69,7 @@ export const teamProfile = [
             "SEO"
         ],
         image:"/profile-vivek.png",
+        title: "Chief Marketing Officer (CMO)",
+        bio: "Oversees digital marketing strategies and initiatives to promote the company."
     },
 ]

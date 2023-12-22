@@ -31,7 +31,13 @@ const PricingCard = ({plan}) => {
                             </div>
                         </div>
 
-                        <p className=' opacity-80 group-hover:animate-blink'>{ plan.price}</p>
+                        <div className=' flex flex-col gap-1 items-center'>
+                            <div className='flex gap-2'>
+                                <s><p className=' opacity-80'>{ plan.realPrice}</p></s>
+                                <p>25% off</p>
+                            </div>
+                            <p className=' opacity-80 group-hover:animate-blink text-lg'>{ plan.discountPrice}</p>
+                        </div>
 
                         <Link href="/price" 
                         className={`px-4 py-2  ${plan.level === "Standart Plan" ? "bg-white text-orange-500  lg:group-hover:bg-orange-500 lg:group-hover:text-white " : "bg-orange-500 group-hover:bg-white group-hover:text-orange-500 hover:text-white hover:bg-red-600 hover:border-white"}   font-bold hover:scale-110 w-fit rounded-xl transition-all duration-500`}
