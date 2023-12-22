@@ -24,8 +24,8 @@ export const roadmapInfo = [
 ]
 
 export const roadmapSymbol = [
-    <MdScreenSearchDesktop />,
-    <FaGlobe />,
-    <IoLogoGooglePlaystore />,
-    <FaAndroid />
+    <MdScreenSearchDesktop key={0} />,
+    <FaGlobe key={1} />,
+    <IoLogoGooglePlaystore key={2} />,
+    <FaAndroid key={3}/>
 ]
