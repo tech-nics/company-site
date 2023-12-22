@@ -1,3 +1,5 @@
+import { blogs } from "../data/blogData"
+
 const style = {
     "height":"100vh",
     "width":"100vw",
@@ -8,7 +10,30 @@ const style = {
     "fontWeight": "900"
 }
 export default function BlogPage(){
-    return (<>
-        <div style={style}>coming  soon</div>
-    </>)
+    return (
+
+        <div className=" pt-16">
+
+            <div className='flex justify-end items-center lg:pr-36 md:pr-28 pr-14  lg:h-40 h-28 bg-gradient-to-br from-[#ff2100] from-0% via-58% to-[#005eff] to-100%'>
+                <h1 className=' lg:text-[4rem] text-3xl text-white font-bold '>Blog</h1>
+            </div> 
+
+            <div className=" grid lg:grid-cols-2 grid-cols-1">
+                {
+                    blogs.map( (blog, index) => (
+                        <div key={index}>
+                            <div>
+                                <img src={blog.img} />
+                            </div>
+                            <h3>{blog.heading}</h3>
+                            <p>{blog.date}</p>
+                            <p>{blog.info}</p>
+                            <a href={blog.link}>Nav link</a>
+                        </div>
+                    ))
+                }
+            </div>
+
+        </div>
+    )
 }

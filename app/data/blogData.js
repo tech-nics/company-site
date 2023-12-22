@@ -1,0 +1,51 @@
+export const blogs = [
+    {
+        img: "/profile-aditya.png",
+        heading: "zhaatu",
+        date: "123234",
+        info: "kedcnoevf   jenvoefv  oec oecj wdcj ",
+        link: "cdcdcdcdc",
+    },
+    {
+        img: "/profile-aditya.png",
+        heading: "zhaatu",
+        date: "123234",
+        info: "kedcnoevf   jenvoefv  oec oecj wdcj ",
+        link: "cdcdcdcdc",
+    },
+    {
+        img: "/profile-aditya.png",
+        heading: "zhaatu",
+        date: "123234",
+        info: "kedcnoevf   jenvoefv  oec oecj wdcj ",
+        link: "cdcdcdcdc",
+    },
+    {
+        img: "/profile-aditya.png",
+        heading: "zhaatu",
+        date: "123234",
+        info: "kedcnoevf   jenvoefv  oec oecj wdcj ",
+        link: "cdcdcdcdc",
+    },
+    {
+        img: "/profile-aditya.png",
+        heading: "zhaatu",
+        date: "123234",
+        info: "kedcnoevf   jenvoefv  oec oecj wdcj ",
+        link: "cdcdcdcdc",
+    },
+    {
+        img: "/profile-aditya.png",
+        heading: "zhaatu",
+        date: "123234",
+        info: "kedcnoevf   jenvoefv  oec oecj wdcj ",
+        link: "cdcdcdcdc",
+    },
+    {
+        img: "/profile-aditya.png",
+        heading: "zhaatu",
+        date: "123234",
+        info: "kedcnoevf   jenvoefv  oec oecj wdcj ",
+        link: "cdcdcdcdc",
+    },
+]

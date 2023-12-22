@@ -127,7 +127,6 @@ const page = () => {
                             <p className=''>Embark on your digital journey with Tech Plusnics. Together, we &apos; ll not only navigate the digital landscape but also conquer it. Join us in shaping a future where your business thrives online.</p>
                             <p className=''>Choose Tech Plusnics for a digital partnership that goes beyond services we are here to elevate your business and celebrate your success.</p>
                             <a href="https://api.whatsapp.com/send?phone=7769964872" className=' w-fit bg-blue-500 hover:bg-blue-700 transition-colors duration-300 text-white font-bold px-6 py-3 rounded-lg self-center'> Contact Us</a>
-                            
                         </div>
                     </div>
 
