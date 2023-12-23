@@ -28,7 +28,7 @@ const page = () => {
 
                         <div className='bg-[#F7F7F7] flex gap-4 lg:gap-8 lg:pt-20 py-10 flex-col mx-auto'>
                             <p className=' text-blue-500 font-bold '>About Tech Plusnics</p>
-                            <h1 className=' text-2xl lg:text-[2.5rem] md:text-[2.5rem] font-black lg:leading-10 md:lg:leading-10'>Empowering Your Digital Journey</h1>
+                            <h1 className=' text-2xl lg:text-[2.5rem] md:text-[2.5rem] font-black lg:leading-10 md:leading-10'>Empowering Your Digital Journey</h1>
                             <p className=' text-gray-400'>At Tech Plusnics, we are more than just a digital services company – we are your partners in transforming your business for the online era. Our journey began with a vision to empower businesses of all sizes to thrive in the digital landscape.</p>
                         </div>
 
@@ -126,7 +126,7 @@ const page = () => {
                             <h2 className=' text-[2rem] leading-10 font-bold '>Let&apos;s Grow Together</h2>
                             <p className=''>Embark on your digital journey with Tech Plusnics. Together, we &apos; ll not only navigate the digital landscape but also conquer it. Join us in shaping a future where your business thrives online.</p>
                             <p className=''>Choose Tech Plusnics for a digital partnership that goes beyond services we are here to elevate your business and celebrate your success.</p>
-                            <a href="https://api.whatsapp.com/send?phone=7769964872" className=' w-fit bg-blue-500 hover:bg-blue-700 transition-colors duration-300 text-white font-bold px-6 py-3 rounded-lg self-center'> Contact Us</a>
+                            <a href="https://api.whatsapp.com/send?phone=7769964872" className=' w-fit bg-blue-500 hover:bg-blue-700 transition-colors duration-300 text-white font-bold lg:px-6 md:px-6 px-4 lg:py-3 md:py-3 py-2 rounded-lg self-center'> Contact Us</a>
                         </div>
                     </div>
 
