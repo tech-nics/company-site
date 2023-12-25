@@ -21,14 +21,16 @@ export default function BlogPage(){
             <div className=" lg:w-10/12 md:w-10/12 py-20 p-2 mx-auto gap-10 grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1">
                 {
                     blogs.map( (blog, index) => (
-                        <div className=" flex flex-col gap-1" key={index}>
-                            <div>
-                                <img src={blog.img} />
+                        <div className=" flex flex-col gap-3 border rounded-2xl" key={index}>
+                            <div className=" rounded-t-2xl overflow-hidden lg:min-h-[25rem] flex items-center  bg-[#F8F8F8] ">
+                                <img className=" object-cover" src={blog.img} />
                             </div>
-                            <h3 className=" text-lg font-bold">{blog.heading}</h3>
-                            <p className=" text-gray-400 text-sm">{blog.date}</p>
-                            <p>{blog.info}. . .</p>
-                            <a className=' w-fit bg-blue-500 hover:bg-blue-700 transition-colors duration-300 text-white font-semibold px-2 py-1 rounded-lg' href={blog.link}>Nav link</a>
+                            <div className=" flex flex-col gap-2 p-4">
+                                <h3 className=" text-lg font-bold">{blog.heading}</h3>
+                                <p className=" text-gray-400 text-sm">{blog.date}</p>
+                                <p>{blog.info}. . .</p>
+                                <a className=' w-fit bg-blue-500 hover:bg-blue-700 transition-colors duration-300 text-white font-semibold px-2 py-1 rounded-lg' href={blog.link}>Read More</a>
+                            </div>
                         </div>
                     ))
                 }

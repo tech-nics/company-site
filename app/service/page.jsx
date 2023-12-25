@@ -35,7 +35,7 @@ export default function BlogPage(){
                     {/* Rigth image */}
                     <div className=" flex flex-col gap-6 lg:w-2/3 w-[90%] ">
                         <p className=" text-blue-500 font-bold ">A Symphony of Services</p>
-                        <h2 className="text-2xl lg:text-[2.5rem] md:text-[2.5rem] font-black lg:leading-10 md:leading-10 ">Unlocking Your Digital Potential with Tech Plusnics</h2>
+                        <h2 className="text-2xl lg:text-[2.5rem] md:text-[2.5rem] font-black lg:leading-[1.2] md:leading-10 ">Unlocking Your Digital Potential with Tech Plusnics</h2>
                         <p className="text-gray-400">In a world driven by digital innovation, Tech Plusnics emerges as your guiding light, paving the way for businesses to not just exist but thrive in the expansive digital realm. Welcome to a transformative experience where our comprehensive suite of digital services is meticulously designed to redefine your online presence and propel your business towards unprecedented growth.</p>
                     </div>
                 </div>
@@ -47,9 +47,9 @@ export default function BlogPage(){
                     {/* Upper section */}
                     <div className=" flex flex-col gap-6">
                         <p className="text-blue-500 font-bold ">Why Choose Tech Plusnics for Your Digital Needs</p>
-                        <h2 className="text-2xl lg:text-[2.5rem] md:text-[2.5rem] font-black lg:leading-10 md:leading-10 ">Explore the possibilities with <br className=" lg:block hidden"/> Tech Plusnics</h2>
+                        <h2 className="text-2xl lg:text-[2.5rem] md:text-[2.5rem] font-black lg:leading-[1.2] md:leading-10 ">Explore the possibilities with <br className=" lg:block hidden"/> Tech Plusnics</h2>
                         <p className="text-gray-400  lg:w-2/3">Contact us to discuss how we can tailor our services to meet your unique business needs by letting our services be the catalyst for your digital success.</p>
-                        <a href="https://api.whatsapp.com/send?phone=7769964872" className=' w-fit bg-blue-500 hover:bg-blue-700 transition-colors duration-300 text-white font-bold px-6 py-3 rounded-lg'> Contact Us</a>
+                        <a href="https://www.instagram.com/techplusnics?igsh=Nmd0bTE4amVzejY=" className=' w-fit bg-blue-500 hover:bg-blue-700 transition-colors duration-300 text-white font-bold px-6 py-3 rounded-lg'>Follow Us</a>
                     </div>
 
                     {/* Lower section */}
@@ -96,13 +96,13 @@ export default function BlogPage(){
 
             {/* Section 4 Contact us */}
             <div className="  bg-gradient-to-br from-[#1c143a] from-50% to-blue-500 text-white">
-                <div className=" flex flex-col lg:flex-row gap-y-10 lg:w-10/12 md:w-10/12 p-4 py-20 mx-auto ">
+                <div className=" flex flex-col lg:flex-row gap-y-10 lg:w-10/12 md:w-10/12 p-4 py-16 mx-auto ">
                     {/* Left side */}
                     <div className=" flex flex-col gap-6">
                         <p className="text-blue-500 font-bold">Follow us</p>
                         <h5 className="text-2xl lg:text-[2.5rem] md:text-[2.5rem] font-black lg:leading-10 md:leading-10 ">A Partnership, Not Just a Service</h5>
-                        <p className="text-gray-400  lg:w-2/3">At Tech Plusnics, we don't just provide services; we build lasting partnerships. Your success is our success, and we walk hand in hand with you on your digital journey. Our client-centric ethos ensures that you are not just a project but a valued collaborator.</p>
-                        <div className=' flex  gap-2'>
+                        <p className="text-gray-400  lg:w-2/3">At Tech Plusnics, we don&apos;t just provide services; we build lasting partnerships. Your success is our success, and we walk hand in hand with you on your digital journey. Our client-centric ethos ensures that you are not just a project but a valued collaborator.</p>
+                        <div className=' flex  gap-2 self-center lg:self-start'>
                             <Link 
                             className=' text-blue-400 p-2 hover:bg-blue-400 hover:bg-opacity-60 rounded-full hover:text-white  transition-all duration-300' target='_blank' href="https://twitter.com/TechPlusNics?t=ehMP3jB2bG-9j6zsJDR37A&s=08"> <BsTwitter size={25} /> </Link>
 

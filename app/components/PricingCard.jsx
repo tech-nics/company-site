@@ -4,7 +4,7 @@ import React from 'react'
 
 const PricingCard = ({plan}) => {
   return (
-    <div href="/price" className={` flex relative flex-col gap-4 items-center min-w-[200px]  p-6 rounded-lg border-2  text-white group  lg:hover:text-white lg:hover:border-white ${plan.level === "Standart Plan" ? "lg:scale-110 bg-orange-500 lg:hover:bg-black lg:hover:bg-opacity-90 lg:hover:scale-110" : "bg-black bg-opacity-90 lg:hover:scale-105 lg:hover:bg-orange-500"}     tansition-all duration-200 cursor-pointer`}>
+    <div href="/price" className={` flex relative flex-col gap-4 items-center min-w-[200px]  p-6  rounded-lg border-2  text-white group  lg:hover:text-white lg:hover:border-white ${plan.level === "Standart Plan" ? "lg:scale-110 bg-orange-500 lg:hover:bg-black lg:hover:bg-opacity-90 lg:hover:scale-110" : "bg-black bg-opacity-90 lg:hover:scale-105 lg:hover:bg-orange-500"}     tansition-all duration-200 cursor-pointer`}>
 
                         {
                             plan.level === "Standart Plan" &&
@@ -39,7 +39,7 @@ const PricingCard = ({plan}) => {
                             <p className=' opacity-80 group-hover:animate-blink text-lg'>{ plan.discountPrice}</p>
                         </div>
 
-                        <Link href="/price" 
+                        <Link href="/#contact-us" 
                         className={`px-4 py-2  ${plan.level === "Standart Plan" ? "bg-white text-orange-500  lg:group-hover:bg-orange-500 lg:group-hover:text-white " : "bg-orange-500 group-hover:bg-white group-hover:text-orange-500 hover:text-white hover:bg-red-600 hover:border-white"}   font-bold hover:scale-110 w-fit rounded-xl transition-all duration-500`}
                         >More Details</Link>
 

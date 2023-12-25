@@ -11,30 +11,14 @@ const HomeAbout = ({direction, heading}) => {
 
         {/* Right carusole */}
         <div 
-        className={`flex flex-col gap-10 justify-center ${direction}`}>
+        className={`flex flex-col gap-10 gap-y-20 justify-between  ${direction}`}>
             <div 
-            data-aos="fade-right"
-            data-aos-duration="1000"
-            data-aos-delay="500"
-            className='lg:w-[40%] flex flex-col gap-5'>
+            className='lg:w-[40%] flex flex-col  gap-10 justify-center'>
                 <div className='flex lg:flex-col md:flex-col leading-[3.5rem] justify-center gap-x-2 font-bold text-[4rem]'>
-                    {
-                        heading ? 
-                        <p className=' text-orange-500'> {heading}</p>
-                        : 
-                        <>
-                            <p className=' text-blue-500'>About</p>
-                            <p className=' text-red-500'>Us</p>
-                        </>
-                    }
+                    <p className=' text-orange-500'> Services </p>
                 </div>
                 <p>
-                    {
-                        heading?
-                        'Empower Your Online Presence with Tech Plus Nics: Our array of digital services includes web design, cybersecurity, digital marketing, SEO, social media marketing, social media advertising, and streamlined digital registration. Dive into the specifics of each service to enhance your online success.'
-                        :
-                        'Tech Plus Nics, also known as TPN, is your gateway to success in the digital realm. Our  services encompass website development, digital marketing, cybersecurity, content creation, app development, digital asset management, and accounting support.   Contact TPN today for a brighter online future. '
-                    }
+                    'Empower Your Online Presence with Tech Plus Nics: Our array of digital services includes web design, cybersecurity, digital marketing, SEO, social media marketing, social media advertising, and streamlined digital registration. Dive into the specifics of each service to enhance your online success.'
                 </p>
                 <Link 
                 className=" px-4 py-2 border-2 border-red-600 w-fit rounded-xl hover:text-white hover:bg-red-600 hover:border-white transition-all duration-500"
@@ -67,10 +51,31 @@ const HomeAbout = ({direction, heading}) => {
                 </div>
             </div> */}
 
-            <CubeSlider heading={heading}/>
+            {/* <CubeSlider heading={heading}/> */}
+
+            <div className=' grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-6'>
+                <div className=' w-80 p-2 flex flex-col items-center rounded-2xl mx-auto'>
+                    <img className=' w-52 mb-5 ' src='/home-service1.png' alt='service1' />
+                    <h2 className=' font-bold'>WEB DESIGNING</h2>
+                    <p className=' text-center'>Crafting visually stunning websites for a seamless user experience</p>
+                </div>
+                <div className=' w-80 p-2 flex flex-col items-center rounded-2xl lg:translate-y-20 mx-auto'> 
+                    <img className='w-52 md:w-48 mb-5' src='/home-service2.png' alt='service1' />
+                    <h2 className=' font-bold'>WEB DEVELOPMENT</h2>
+                    <p className=' text-center'>Transforming ideas into powerful online experiences</p>
+                </div>
+                <div className=' w-80 p-2 flex flex-col items-center rounded-2xl mx-auto'>
+                    <img className='w-52 md:w-48 mb-5' src='/home-service2.png' alt='service1' />
+                    <h2 className=' font-bold'>WORDPRESS DESIGN</h2>
+                    <p className=' text-center'>Tailored solutions for effortless content management.</p>
+                </div>
+                <div className=' w-80 p-2 flex flex-col items-center rounded-2xl lg:translate-y-20 mx-auto'>
+                    <img className='w-52  mb-5' src='/home-service1.png' alt='service1' />
+                    <h2 className=' font-bold'>MERN STACK</h2>
+                    <p className=' text-center'>Cutting-edge, scalable solutions with MERN Stack expertise.</p>
+                </div>
+            </div>
         </div>
-
-
 
     </div>
   )

@@ -126,7 +126,7 @@ const page = () => {
                             <h2 className=' text-[2rem] leading-10 font-bold '>Let&apos;s Grow Together</h2>
                             <p className=''>Embark on your digital journey with Tech Plusnics. Together, we &apos; ll not only navigate the digital landscape but also conquer it. Join us in shaping a future where your business thrives online.</p>
                             <p className=''>Choose Tech Plusnics for a digital partnership that goes beyond services we are here to elevate your business and celebrate your success.</p>
-                            <a href="https://api.whatsapp.com/send?phone=7769964872" className=' w-fit bg-blue-500 hover:bg-blue-700 transition-colors duration-300 text-white font-bold lg:px-6 md:px-6 px-4 lg:py-3 md:py-3 py-2 rounded-lg self-center'> Contact Us</a>
+                            <a href="https://api.whatsapp.com/send?phone=7769964872" className=' w-fit bg-blue-500 hover:bg-blue-700 transition-colors duration-300 text-white font-bold lg:px-6 md:px-6 px-4 lg:py-3 md:py-3 py-2 rounded-lg'> Contact Us</a>
                         </div>
                     </div>
 

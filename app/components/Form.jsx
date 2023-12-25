@@ -35,7 +35,7 @@ export default function Form(){
     // 
     // data-aos-offset="500"
     return(
-        <div data-aos="fade-up"  data-aos-duration="1000" data-aos-delay="500" className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+        <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
             <form className=" flex flex-col gap-2 lg:gap-5 p-[6px] md:p-4  lg:p-6" onSubmit={handleSubmit(onSubmit)}>
             
               <div className=" flex flex-col gap-1">

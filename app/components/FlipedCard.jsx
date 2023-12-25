@@ -6,7 +6,10 @@ const FlipedCard = ({data, index}) => {
   return (
     <div class={`flip-card ${index === 0 && "lg:translate-y-14"} ${index === 2 && "lg:translate-y-14"} cursor-pointer`}>
                 <div class="flip-card-inner">
-                    <div class="flip-card-front">
+                    <div class="flip-card-front flex flex-col gap-2">
+                        <div>
+                            { data.icon}
+                        </div>
                         <h4 className=' text-2xl'>{data.heading}</h4>
                         {/* <p>{data.desc1}</p> */}
                     </div>

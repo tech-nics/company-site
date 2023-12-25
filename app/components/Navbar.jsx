@@ -59,7 +59,7 @@ const Navbar = () => {
     //   </div>
     // </div>
 
-    <div className="z-[9999] flex items-center fixed top-0 left-0 min-h-[4rem] right-0 backdrop-blur-md lg:bg-black lg:bg-opacity-20">
+    <div className="z-[9999] flex items-center fixed top-0 left-0 min-h-[4rem] right-0 backdrop-blur-md bg-black bg-opacity-20">
         <div className="flex justify-between items-center p-2 w-[90%] mx-auto ">
             {/* Logo */}
             {/* max-[500px]:text-[20px]  md:text-[16px] lg:text-[32px] */}
@@ -67,8 +67,9 @@ const Navbar = () => {
             
             {/* Center */}
             <div className="lg:flex gap-4 hidden ">
-                <Link className=" p-2 px-4 font-bold border bg-white  transition-all duration-500 rounded-lg hover:text-blue-500" href="/service">Service</Link>
+                <Link className=" p-2 px-4 font-bold border  bg-white transition-all duration-500 rounded-lg  hover:text-blue-500" href="/">Home</Link>
                 <Link className=" p-2 px-4 font-bold border  bg-white transition-all duration-500 rounded-lg  hover:text-blue-500" href="/about">About Us</Link>
+                <Link className=" p-2 px-4 font-bold border bg-white  transition-all duration-500 rounded-lg hover:text-blue-500" href="/service">Service</Link>
                 <Link className=" p-2 px-4 font-bold border  bg-white transition-all duration-500 rounded-lg  hover:text-blue-500" href="/blogs">Blog</Link>
             </div>
 
@@ -76,15 +77,16 @@ const Navbar = () => {
                 Contact Us
             </Link>
 
-            <div  className=" lg:hidden bg-white bg-opacity-30 p-1 rounded-lg relative">
+            <div  className=" lg:hidden bg-white bg-opacity-30 p-2 rounded-lg relative">
                 {
                     isDropdownOpen ?
                     <RxCross2 className=" cursor-pointer" onClick={handleDropdownToggle}  size={25}/> :
-                    <GiHamburgerMenu className=" cursor-pointer" onClick={handleDropdownToggle}  size={25}/> 
+                    <GiHamburgerMenu className=" cursor-pointer font-bold" onClick={handleDropdownToggle}  size={25}/> 
                     
                 }
 
                 <div ref={dropdownRef} className={`${isDropdownOpen ? " opacity-100": " opacity-0"} transition-all duration-500 flex flex-col gap-1 absolute top-12 -right-2 border border-gray-300 bg-white p-3 w-32 rounded-lg `}>
+                    <Link onClick={handleDropdownToggle} className=" font-semibold hover:bg-blue-200 hover:rounded-md p-1 border-b-2"  href="/">Home</Link>
                     <Link onClick={handleDropdownToggle} className=" font-semibold hover:bg-blue-200 hover:rounded-md p-1 border-b-2"  href="/service">Service</Link>
                     <Link onClick={handleDropdownToggle} className=" font-semibold hover:bg-blue-200 border-b-2 hover:rounded-md p-1"  href="/about">About Us</Link>
                     <Link onClick={handleDropdownToggle} className=" font-semibold hover:bg-blue-200 rounded-md p-1"  href="/blogs">Blog</Link>

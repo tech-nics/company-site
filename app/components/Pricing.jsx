@@ -7,11 +7,8 @@ import {BsFillArrowRightCircleFill, BsFillArrowLeftCircleFill} from "react-icons
 
 const Pricing = () => {
   return (
-    <div className=" flex flex-col gap-12 lg:gap-24 md:gap-2 py-10 pb-20 lg:py-20 lg:w-10/12 mx-auto">
+    <div id='pricing' className=" flex flex-col gap-12 lg:gap-24 md:gap-2 py-10 pb-20 lg:py-20 lg:w-10/12 mx-auto">
         <h1 
-        data-aos="fade-up"
-        data-aos-duration="1000"
-        data-aos-delay="500"
         className="text-center text-[2.5rem] font-bold text-orange-600" > Pick Your <span className=" text-blue-500"> Plan</span></h1>
         {/* For laptop view */}
         <div className=" hidden lg:flex gap-8 justify-between" >
@@ -19,8 +16,8 @@ const Pricing = () => {
                 pricingData.map( (plan, index) => ( 
                     <div
                     key={index}
-                    data-aos="fade-right"
-                    data-aos-delay={`${index*300}`}
+                    // data-aos="fade-right"
+                    // data-aos-delay={`${index*300}`}
                     >
                             <PricingCard  plan={plan} />
                     </div>
@@ -34,9 +31,6 @@ const Pricing = () => {
             {
                 pricingData.map( (plan, index) => (
                     <div 
-                    data-aos="fade-right"
-                    data-aos-duration="1000"
-                    data-aos-delay="500"
                     key={index} className="carousel-item w-full lg:hidden flex flex-col gap-2">
                         <PricingCard plan={plan} />
                         {
