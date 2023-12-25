@@ -18,7 +18,7 @@ const HomeAbout = ({direction, heading}) => {
                     <p className=' text-orange-500'> Services </p>
                 </div>
                 <p>
-                    'Empower Your Online Presence with Tech Plus Nics: Our array of digital services includes web design, cybersecurity, digital marketing, SEO, social media marketing, social media advertising, and streamlined digital registration. Dive into the specifics of each service to enhance your online success.'
+                    Empower Your Online Presence with Tech Plus Nics: Our array of digital services includes web design, cybersecurity, digital marketing, SEO, social media marketing, social media advertising, and streamlined digital registration. Dive into the specifics of each service to enhance your online success.
                 </p>
                 <Link 
                 className=" px-4 py-2 border-2 border-red-600 w-fit rounded-xl hover:text-white hover:bg-red-600 hover:border-white transition-all duration-500"
