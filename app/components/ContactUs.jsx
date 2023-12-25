@@ -6,9 +6,9 @@ const ContactUs = () => {
   return (
     <>
       <div id="contact-us" className="py-20  bg-cover bg-center flex items-center min-h-screen  bg-fit bg-[url('https://templatemo.com/templates/templatemo_562_space_dynamic/assets/images/contact-bg.png')]">
-        <div className="hero-content flex-col lg:flex-row">
+        <div className="hero-content px-2 flex-col lg:flex-row mx-auto">
           {/*  */}
-          <div data-aos="fade-right"  data-aos-duration="1000"  className="text-center lg:text-left">
+          <div  className="text-center lg:text-left">
             <h1 className="text-2xl text-white font-bold capitalize">
             Contact Tech Plus Nics now and let{`\'`}s embark on a transformative digital journey for your business{`\'`}s success. 
             </h1>
@@ -22,7 +22,7 @@ const ContactUs = () => {
                   src="/phone.png"
                   alt="phone"
                 />{" "}
-                &nbsp;<span className="inline-block">8668679847</span>
+                &nbsp;<span className="inline-block">8668679847 / 7219656496</span>
               </div>
             </div>
           </div>

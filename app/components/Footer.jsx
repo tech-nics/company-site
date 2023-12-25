@@ -10,9 +10,6 @@ import { MdRateReview } from "react-icons/md"
 const Footer = () => {
   return (
     <section 
-        data-aos="fade-down"
-        data-aos-duration="1000"
-        data-aos-delay="500"
     className=' w-10/12 mx-auto py-16 flex flex-col gap-10' >
         <div 
         className=' grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 gap-8 '>
@@ -47,7 +44,7 @@ const Footer = () => {
                 <Link href="/" scroll={true} >Home</Link>
                 <Link href="/about">About Us</Link>
                 <Link href="/service">Service</Link>
-                <Link href="/contact">Contact Us</Link>
+                <Link href="/#contact-us">Contact Us</Link>
             </div>
 
             {/* Address and email address */}

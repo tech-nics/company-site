@@ -6,15 +6,9 @@ const Portfolio = () => {
     <section className=' flex flex-col gap-14 w-10/12 mx-auto pb-16'>   
 
         <h3 
-         data-aos="fade-down"
-         data-aos-duration="1000"
-         data-aos-delay="500"
         className=' text-center text-2xl font-bold'>Meet Our <span className=' text-blue-500'>Clients</span></h3>
 
         <div 
-         data-aos="fade-up"
-         data-aos-duration="1000"
-         data-aos-delay="500"
         className=' flex flex-wrap flex-col lg:flex-row items-center gap-y-6 justify-evenly w-full'>
             <Image
             alt='client1'
