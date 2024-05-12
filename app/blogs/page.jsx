@@ -12,9 +12,9 @@ const style = {
 export default function BlogPage(){
     return (
 
-        <div className=" pt-16">
+        <div className=" ">
 
-            <div className='flex justify-end items-center lg:pr-36 md:pr-28 pr-14  lg:h-40 h-28 bg-gradient-to-br from-[#ff2100] from-0% via-58% to-[#005eff] to-100%'>
+            <div className='pt-16 flex justify-end items-center lg:pr-36 md:pr-28 pr-14  lg:h-40 h-40 bg-gradient-to-br from-[#ff2100] from-0% via-58% to-[#005eff] to-100%'>
                 <h1 className=' lg:text-[4rem] text-3xl text-white font-bold '>Blog</h1>
             </div> 
 

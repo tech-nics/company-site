@@ -1,10 +1,37 @@
 "use client"
+
 import Link from "next/link";
-import { useState,useEffect, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { RxCross2 } from "react-icons/rx";
 
 const Navbar = () => {
+
+    const links = [
+        {
+            name: "Home",
+            href: "/"
+        },
+        {
+            name: "Service",
+            href: "/service"
+        },
+        {
+            name: "About Us",
+            href: "/about"
+        },
+        {
+            name: "Blog",
+            href: "/blogs"
+        },
+    ]
+
+    // for navbar moment
+    const [scrolling, setScrolling] = useState(true);
+    const [scrollTop, setScrollTop] = useState(0);
+    const [showDropDown, setShowDropDown] = useState(false)
+
+    // for dropdown menu
     const [isDropdownOpen, setDropdownOpen] = useState(false);
     const dropdownRef = useRef(null);
 
@@ -29,6 +56,27 @@ const Navbar = () => {
         document.removeEventListener('mousedown', handleOutsideClick);
         };
     }, [isDropdownOpen]);
+
+    useEffect(() => {
+        
+        // For checking  scrolling  on window scroll event.
+        function onScroll() {
+            let currentPosition = window.pageYOffset;
+            if (currentPosition > scrollTop) {
+                setScrolling(false);
+            } else {
+                setScrolling(true);
+            }
+            setScrollTop(currentPosition <= 0 ? 0 : currentPosition);
+        }
+
+        // if( scrolling ||  ) setShowDropDown(false)
+        if( scrolling || showDropDown ) setShowDropDown(false)
+        window.addEventListener("scroll", onScroll);
+        console.log(" scrolled down", scrolling, scrollTop)
+        return () => window.removeEventListener("scroll", onScroll);
+
+    }, [scrollTop]);
 
   return (
     // <div className="navbar fixed  z-[9999] animate-moveDown bg-slate-100  md:px-5">
@@ -59,8 +107,12 @@ const Navbar = () => {
     //   </div>
     // </div>
 
-    <div className="z-[9999] flex items-center fixed top-0 left-0 min-h-[4rem] right-0 backdrop-blur-md bg-black bg-opacity-20">
-        <div className="flex justify-between items-center p-2 w-[90%] mx-auto ">
+    <>
+        <div className={`z-[999] flex items-center fixed top-0 left-0 min-h-[4rem] right-0  bg-black   duration-300 
+        ${scrolling ? "" : " -translate-y-[100%]"}  ${scrollTop <= 2 ? "backdrop-blur-none bg-white" : "backdrop-blur-md bg-opacity-20"}
+        
+    `}>
+        <div className="flex justify-between items-center p-2 w-[90%] mx-auto">
             {/* Logo */}
             {/* max-[500px]:text-[20px]  md:text-[16px] lg:text-[32px] */}
             <Link href="/" scroll={true} className=" uppercase text-[#03a4ed]  tracking-[4px] text-[20px] lg:text-[32px] font-bold">Techplus<span className="text-[#dc3545] font-[700] uppercase text-[20px] lg:text-[32px]">nics</span></Link>
@@ -77,23 +129,31 @@ const Navbar = () => {
                 Contact Us
             </Link>
 
-            <div  className=" lg:hidden bg-white bg-opacity-30 p-2 rounded-lg relative">
+            <div  className=" lg:hidden bg-white bg-opacity-30 p-2 rounded-lg">
                 {
                     isDropdownOpen ?
                     <RxCross2 className=" cursor-pointer" onClick={handleDropdownToggle}  size={25}/> :
                     <GiHamburgerMenu className=" cursor-pointer font-bold" onClick={handleDropdownToggle}  size={25}/> 
                     
                 }
-
-                <div ref={dropdownRef} className={`${isDropdownOpen ? " opacity-100": " opacity-0"} transition-all duration-500 flex flex-col gap-1 absolute top-12 -right-2 border border-gray-300 bg-white p-3 w-32 rounded-lg `}>
-                    <Link onClick={handleDropdownToggle} className=" font-semibold hover:bg-blue-200 hover:rounded-md p-1 border-b-2"  href="/">Home</Link>
-                    <Link onClick={handleDropdownToggle} className=" font-semibold hover:bg-blue-200 hover:rounded-md p-1 border-b-2"  href="/service">Service</Link>
-                    <Link onClick={handleDropdownToggle} className=" font-semibold hover:bg-blue-200 border-b-2 hover:rounded-md p-1"  href="/about">About Us</Link>
-                    <Link onClick={handleDropdownToggle} className=" font-semibold hover:bg-blue-200 rounded-md p-1"  href="/blogs">Blog</Link>
-                </div>
             </div>
         </div>
     </div>
+    <div ref={dropdownRef} className={`${isDropdownOpen ? " fixed": " hidden"} z-[1000] overflow-hidden transition-all duration-500 flex flex-col items-center justify-center inset-0  h-screen bg-black text-white w-screen  `}>
+        <RxCross2 className=" cursor-pointer absolute right-14 top-10" onClick={handleDropdownToggle}  size={25}/>
+        <div className=" flex flex-col gap-5 text-3xl h-fit">
+            {/* <Link onClick={handleDropdownToggle} className=" font-semibold hover:bg-blue-200 hover:rounded-md p-1"  href="/">Home</Link>
+            <Link onClick={handleDropdownToggle} className=" font-semibold hover:bg-blue-200 hover:rounded-md p-1 "  href="/service">Service</Link>
+            <Link onClick={handleDropdownToggle} className=" font-semibold hover:bg-blue-200 hover:rounded-md p-1"  href="/about">About Us</Link>
+            <Link onClick={handleDropdownToggle} className=" font-semibold hover:bg-blue-200 rounded-md p-1"  href="/blogs">Blog</Link> */}
+            {
+                links.map( ( link, index) => (
+                    <Link key={index} onClick={handleDropdownToggle} className={`font-semibold text-center rounded-md p-1 `}  href={link.href}>{link.name}</Link>
+                ) )
+            }
+        </div>
+    </div>
+    </>
       );
 }
 

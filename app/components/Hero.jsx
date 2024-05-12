@@ -39,7 +39,7 @@ const Hero = () => {
         //     </div>
         //   </div>
 
-        <div className=" mt-16 bg-[url('../public/home-hero.png')] bg-no-repeat bg-cover lg:bg-center md:bg-center w-screen h-full min-h-[calc(100vh-64px)]">
+        <div className="pt-16 bg-[url('../public/home-hero.png')] bg-no-repeat bg-cover lg:bg-center md:bg-center w-screen h-full min-h-[calc(100vh-64px)]">
             <div className=" w-10/12 mx-auto">
                 <div className=" lg:w-[40%] md:w-[40%] flex flex-col lg:gap-10 md:gap-10 gap-10 lg:py-20 md:py-20 py-10">
                     <h6 className=" text-blue-500 font-bold tracking-wider" >Digital Brilliance</h6> 

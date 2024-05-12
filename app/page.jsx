@@ -22,7 +22,7 @@ export default function Home() {
       }, []);
     
   return (
-    <main >
+    <main className=' overflow-x-hidden'>
         <Hero/>
         {/* <HomeAbout direction={" md:flex-row lg:flex-row"} /> */}
         <HomeSection1/>

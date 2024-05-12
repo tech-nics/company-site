@@ -10,11 +10,11 @@ import { flipedCard } from '../data/flipedCardData'
 
 const page = () => {
   return (
-    <div className=' pt-16 '>
+    <div className=' '>
         {/* <About/> */}
         {/* Banner */}
         {/* via-[#ff7e0773] via-27% via-[#00bcd41a] via-50% via-[#00bcd442] */}
-        <div className='flex justify-end items-center lg:pr-36 md:pr-28 pr-14  lg:h-40 h-28 bg-gradient-to-br from-[#ff2100] from-0% via-58% to-[#005eff] to-100%'>
+        <div className=' pt-16  flex justify-end items-center lg:pr-36 md:pr-28 pr-14  lg:h-40 h-40 bg-gradient-to-br from-[#ff2100] from-0% via-58% to-[#005eff] to-100%'>
             <h1 className=' lg:text-[4rem] text-3xl text-white font-bold '>About Us</h1>
         </div>  
 
@@ -81,7 +81,7 @@ const page = () => {
                 <div className=' grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-16 place-items-center'>
                 {
                     teamProfile.map( (member, index) => (
-                        <div key={index} className=' flex-col border-2  rounded-lg group  w-[16rem] lg:min-h-[25rem] lg:w-full md:w-full relative'>
+                        <div key={index} className=' flex-col border-2  rounded-lg group  w-[16rem] lg:min-h-[25rem] lg:w-full md:w-full relative overflow-hidden'>
                             <div className=' overflow-hidden rounded-lg rounded-b-none'>
                                 <img className=' h-full w-full lg:min-h-[22rem] md:min-h-[22rem]' src={member.image} />
                             </div>
@@ -94,7 +94,7 @@ const page = () => {
                                 {member.title}
                             </div>
 
-                            <div className=' flex flex-col backdrop-blur-sm text-white justify-center items-center gap-3 p-4 font-bold absolute bg-orange-600 h-full w-full inset-0 scale-y-0 bg-opacity-70 group-hover:scale-y-100 transition-all duration-500'>
+                            <div className=' flex flex-col backdrop-blur-sm text-white justify-center items-center gap-3 p-4 font-bold absolute bg-orange-600 h-full w-full inset-0 bg-opacity-70 transition-all duration-500 translate-y-[100%] group-hover:translate-y-0'>
                                 <p>{member.bio}</p>
                                 <p>{member.description}</p>
                             </div>
